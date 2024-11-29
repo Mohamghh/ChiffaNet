@@ -25,14 +25,14 @@ public class RendezVousApplication {
 
 			rendezvousRepo.save(Rendezvous.builder()
 					.date(LocalDate.now())
-					.heure(LocalTime.of(10, 30)) // 10:30 AM
+					.heure(LocalTime.of(10, 30))
 					.statut("Scheduled")
 					.build());
 
 			rendezvousRepo.save(Rendezvous.builder()
 
-					.date(LocalDate.now().plusDays(1)) // Tomorrow
-					.heure(LocalTime.of(15, 0)) // 3:00 PM
+					.date(LocalDate.now().plusDays(1))
+					.heure(LocalTime.of(15, 0))
 					.statut("Confirmed")
 					.build());
 		};

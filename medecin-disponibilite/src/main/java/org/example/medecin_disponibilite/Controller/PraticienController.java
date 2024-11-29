@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RefreshScope
-@RequestMapping("/api/praticiens")
+@RequestMapping("/MEDECIN-DISPONIBILITE")
 public class PraticienController {
 
     @Autowired
