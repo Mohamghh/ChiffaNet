@@ -40,4 +40,10 @@ public class DisponibiliteController {
     public void deleteDisponibilite(@PathVariable Long id) {
         disponibiliteService.deleteDisponibilite(id);
     }
+
+    @GetMapping("/praticien/{praticienId}")
+    public List<Disponibilite> getDisponibilitesByPraticienId(@PathVariable Long praticienId) {
+        return disponibiliteService.getDisponibilitesByPraticienId(praticienId);
+    }
+
 }

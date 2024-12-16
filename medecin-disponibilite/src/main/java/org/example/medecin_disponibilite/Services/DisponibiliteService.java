@@ -12,4 +12,6 @@ public interface DisponibiliteService {
     Disponibilite createDisponibilite(Disponibilite disponibilite);
     Disponibilite updateDisponibilite(Long id, Disponibilite disponibiliteDetails);
     void deleteDisponibilite(Long id);
+    List<Disponibilite> getDisponibilitesByPraticienId(Long praticienId);
+
 }

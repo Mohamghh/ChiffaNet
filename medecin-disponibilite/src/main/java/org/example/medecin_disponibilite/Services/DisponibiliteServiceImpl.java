@@ -44,4 +44,8 @@ public class DisponibiliteServiceImpl implements DisponibiliteService {
     public void deleteDisponibilite(Long id) {
         disponibiliteRepo.deleteById(id);
     }
+
+    public List<Disponibilite> getDisponibilitesByPraticienId(Long praticienId) {
+        return disponibiliteRepo.findByPraticienId(praticienId);
+    }
 }

@@ -23,7 +23,7 @@ public class Rendezvous {
     private LocalDate date;
     private LocalTime heure;
     private String statut;
-
+    private Long disponibiliteId;
 
     public Long getId() {
         return id;
@@ -31,6 +31,14 @@ public class Rendezvous {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getDisponibiliteId() {
+        return disponibiliteId;
+    }
+
+    public void setDisponibiliteId(Long disponibiliteId) {
+        this.disponibiliteId = disponibiliteId;
     }
 
     public String getStatut() {
@@ -49,20 +57,20 @@ public class Rendezvous {
         this.heure = heure;
     }
 
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
     public Long getPatientId() {
         return patientId;
     }
 
     public void setPatientId(Long patientId) {
         this.patientId = patientId;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Long getPraticienId() {
@@ -72,7 +80,4 @@ public class Rendezvous {
     public void setPraticienId(Long praticienId) {
         this.praticienId = praticienId;
     }
-
-
-
 }
