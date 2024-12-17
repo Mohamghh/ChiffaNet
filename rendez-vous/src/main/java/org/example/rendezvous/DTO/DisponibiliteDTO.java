@@ -1,6 +1,5 @@
-package org.example.rendezvous.Entities;
+package org.example.rendezvous.DTO;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
